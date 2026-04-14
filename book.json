@@ -4,5 +4,8 @@
   "language": "en",
   "plugins": [
     "katex"
-  ]
+  ],
+  "styles": {
+    "website": "styles/website.css"
+  }
 }

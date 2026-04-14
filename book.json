@@ -1,0 +1,8 @@
+{
+  "title": "TurboFlow Documentation",
+  "description": "Official documentation for TurboFlow — a next-generation Layer-1 for perpetual trading.",
+  "language": "en",
+  "plugins": [
+    "katex"
+  ]
+}

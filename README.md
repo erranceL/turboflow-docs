@@ -40,4 +40,4 @@ By delivering low fees, flexible leverage, and a seamless user experience, Turbo
 
 ## Our Webisite
 
-{% embed url="http://turboflow.xyz" %}
+[turboflow.xyz](http://turboflow.xyz)

@@ -1,0 +1,12 @@
+{
+  "name": "turboflow-docs",
+  "private": true,
+  "scripts": {
+    "build": "honkit build",
+    "serve": "honkit serve"
+  },
+  "devDependencies": {
+    "honkit": "^5.0.0",
+    "honkit-plugin-katex": "^1.1.7"
+  }
+}

@@ -24,8 +24,7 @@ TurboFlow supports multiple trading models so users can choose the structure tha
 This model operates similarly to most traditional exchanges. You pay a trading fee and slippage when opening and closing a trade
 
 * **Trading fee**: Most assets fall within the **4–6 basis point (bp)** range, where 1 bp = 0.01%.&#x20;
-* **Slippage**: calculated as position size/price slippage factor + base slippage.\
-  The current price slippage factor can be viewed here.
+* **Slippage**: calculated as position size/price slippage factor + base slippage.
 
 This setup is designed to reflect the real cost of trading on an orderbook exchange and correctly price the execution risk involved. When estimating total cost, both the trading fee and price impact are shown.
 

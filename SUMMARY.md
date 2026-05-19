@@ -25,6 +25,7 @@
   * [Campaigns](turboflow/growth/campaigns.md)
 * [RESOURCES](turboflow/resources/README.md)
   * [Deposits & Withdrawals](turboflow/resources/deposits-and-withdrawals.md)
+  * [Fee Schedule](turboflow/resources/fee-schedule.md)
   * [Tutorial](turboflow/resources/tutorial.md)
   * [FAQ](turboflow/resources/faq.md)
   * [Brand Kit](turboflow/resources/brand-kit.md)

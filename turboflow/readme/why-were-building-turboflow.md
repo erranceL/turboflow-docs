@@ -11,20 +11,30 @@ Today, too many trading platforms still feel difficult to enter, expensive to us
 
 We are building TurbFlow around four core principles:
 
-* **Amplified Opportunity**
+
+
+1. **Amplified Opportunity**
 
 Event Contracts start from just **30 seconds**, while perpetuals offer **up to 1000x leverage**. TurboFlow is designed to help users do more with less capital.
 
-* **Accessible by Design**
+
+
+2. **Accessible by Design**
 
 Users can start trading from as little as **$2**. Lower barriers create broader access and allow more people to participate.
 
-* **Institutional-Grade Liquidity**
+
+
+3. **Institutional-Grade Liquidity**
 
 TurbFlow is powered by **professional market makers and robust trading mechanisms**, bringing stronger market quality to everyday users.
 
-* **Transparent by Design**
+
+
+4. **Transparent by Design**
 
 With on-chain data, published rules, and verifiable market logic, TurboFlow is built to make trading more open, more understandable, and more trustworthy.
+
+
 
 **TurboFlow is not just about adding more products. It is about rebuilding market access for everyone.**

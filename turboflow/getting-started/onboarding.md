@@ -49,24 +49,24 @@ As you continue participating, you may unlock more opportunities, and more ways 
 
 ### **Explore by section**
 
-{% content-ref url="../vault/" %}
-[vault](../vault/)
+{% content-ref url="../turboflow-core/" %}
+[turboflow-core](../turboflow-core/)
 {% endcontent-ref %}
 
-{% content-ref url="../trading/" %}
-[trading](../trading/)
+{% content-ref url="../products/" %}
+[products](../products/)
 {% endcontent-ref %}
 
-{% content-ref url="../parameters/" %}
-[parameters](../parameters/)
+{% content-ref url="../incentives/" %}
+[incentives](../incentives/)
 {% endcontent-ref %}
 
-{% content-ref url="../deposits-and-withdrawals/" %}
-[deposits-and-withdrawals](../deposits-and-withdrawals/)
+{% content-ref url="../growth/" %}
+[growth](../growth/)
 {% endcontent-ref %}
 
-{% content-ref url="../referral-program/" %}
-[referral-program](../referral-program/)
+{% content-ref url="../resources/" %}
+[resources](../resources/)
 {% endcontent-ref %}
 
 #### **Trading, made simple.**

@@ -1,4 +1,8 @@
-# Trading
+---
+icon: chart-waterfall
+---
+
+# PRODUCTS
 
 ## Trading Models
 

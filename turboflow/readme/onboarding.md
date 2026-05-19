@@ -49,7 +49,25 @@ As you continue participating, you may unlock more opportunities, and more ways 
 
 ### **Explore by section**
 
+{% content-ref url="../vault/" %}
+[vault](../vault/)
+{% endcontent-ref %}
 
+{% content-ref url="../trading/" %}
+[trading](../trading/)
+{% endcontent-ref %}
+
+{% content-ref url="../parameters/" %}
+[parameters](../parameters/)
+{% endcontent-ref %}
+
+{% content-ref url="../deposits-and-withdrawals/" %}
+[deposits-and-withdrawals](../deposits-and-withdrawals/)
+{% endcontent-ref %}
+
+{% content-ref url="../referral-program/" %}
+[referral-program](../referral-program/)
+{% endcontent-ref %}
 
 #### **Trading, made simple.**
 

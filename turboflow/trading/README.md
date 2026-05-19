@@ -1,80 +1,34 @@
 ---
+description: The market formats and product experiences available across TurboFlow.
 icon: chart-waterfall
 ---
 
 # PRODUCTS
 
-## Trading Models
+TurboFlow is building a broader set of market products for retail users — not just a single trading interface, but a growing range of ways to participate.
 
-Traders can select between two fee models:
+This section introduces the product experiences currently available on TurboFlow, from perpetual trading to event-based formats, as well as the supporting systems that make those products work.
 
-#### 1. Fixed Fee Model
+### What you’ll find here
 
-This model operates similarly to most traditional exchanges. You pay a trading fee and slippage when opening and closing a trade.
+#### Perpetual Trading
 
+Explore TurboFlow’s core perpetual trading experience, including high-leverage access, market participation, and flexible trading models.
 
+#### Event Contracts
 
-* Trading fee: Most assets fall within the 4–6 bp range. The full list can be verified [**here**](https://turboflow.gitbook.io/whitepaper/turboflow/parameters).
-* Slippage: calculated as position size/price slippage factor + base slippage.\
-  The current price slippage factor can be viewed here.<br>
+Learn how TurboFlow’s short-cycle, event-based products allow users to take a view on market outcomes with fixed settlement timing.
 
-This setup is designed to reflect the real cost of trading on an orderbook exchange and correctly price the execution risk involved. When estimating total cost, both the trading fee and price impact are shown.\
-At the time of opening a trade, the platform charges double the combined cost (to account for both opening and closing). This amount appears in your transaction history.\
-When closing the trade, no additional fees are charged.
+#### TurboFlow App
 
-#### 2. Profit-Sharing Model
+See how users can access and engage with TurboFlow through the platform’s app experience.
 
-**No fees or slippage** when opening a trade.
+#### Future Products
 
-If a trade closes with a profit, the platform charges a small percentage of that profit — the exact rate depends on how much the underlying asset moved in your favor. You can view this relationship in the Profit-Share Calculator.
+TurboFlow is designed to expand beyond its current formats. This section will introduce future market products as the platform continues to evolve.
 
-If the trade ends in a loss, no fees or slippage are involved.
+### Why it matters
 
+TurboFlow’s product strategy is built around a simple idea: **market participation should not be one-size-fits-all**.
 
-
-## Funding Fees
-
-Funding fees are charged every **1–8 hours**, depending on the specific token. The rates are derived from **market-implied funding rates** on major exchanges.
-
-* **Positive funding**: Long positions pay the fee to the vault.
-* **Negative funding**: Short positions pay the fee to the vault.
-
-If a trade is closed before the next funding window, **no funding fee applies**.
-
-During the **profit-share model**, traders will receive **70% of the displayed funding amount**.\
-Under the **flat-fee model**, traders receive **the full amount** of the funding.
-
-
-
-## Oracles
-
-Prices are sourced from a weighted average of leading exchanges (Binance, OKX, Bybit, and others) to ensure accuracy and reliability.
-
-
-
-## Liquidation
-
-Positions are liquidated when the total collateral value falls below the required maintenance margin across all open positions.
-
-$$
-Collateral\ Value<Position\ Size\times Maintenance\ Margin\ Rate
-$$
-
-1. **For leverage ≤ 100x:**\
-   Maintenance Margin Rate (MMR) = min(45% × Initial Margin Rate, leverage-specific maximum MMR)
-
-* The leverage-specific maximum MMR depends on the position holdings of each trading pair and can be viewed in the reference table.
-* Initial Margin Rate (IMR) = 1 / Leverage
-
-
-
-2. **For leverage > 100x:**\
-   Maintenance margin may vary with market conditions and token-specific parameters. It is capped at **70% × IMR** and floored at **45% × IMR**.
-
-
-
-## **Auto Deleveraging**
-
-When a trader’s **unrealized PnL** exceeds the **maximum winning cap** set for a given token, the position is **automatically deleveraged** at the level where the trader retains **profits equal to that cap**.
-
-You can view the **maximum winning cap** for each trading pair and trade directly on the **Reference Page** for **full transparency**.
+By offering different market formats, TurboFlow aims to make trading more accessible, more engaging, and more adaptable to how retail users actually want to participate.

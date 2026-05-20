@@ -97,7 +97,7 @@ Under normal conditions, order confirmation may involve a delay of around 300–
 
 <summary>What are Points?</summary>
 
-TurboFlow Points are part of the [platform’s points system](../incentives/points.md) and are used to reflect eligible activity across TurbFlow.
+TurboFlow Points are part of the [platform’s points system](../rewards/points.md) and are used to reflect eligible activity across TurbFlow.
 
 </details>
 

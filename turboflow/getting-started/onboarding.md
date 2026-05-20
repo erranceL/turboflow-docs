@@ -61,8 +61,8 @@ As you continue participating, you may unlock more opportunities, and more ways 
 [products](../products/)
 {% endcontent-ref %}
 
-{% content-ref url="../incentives/" %}
-[incentives](../incentives/)
+{% content-ref url="../rewards/" %}
+[rewards](../rewards/)
 {% endcontent-ref %}
 
 {% content-ref url="../growth/" %}

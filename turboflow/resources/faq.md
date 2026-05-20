@@ -53,6 +53,22 @@ Due to the uncertainty of on-chain conditions, deposits or withdrawals may occas
 
 <details>
 
+<summary>What wallet solution does TurboFlow use?</summary>
+
+TurboFlow currently uses **Privy** as part of its wallet access and account experience. In simple terms, after a user registers or logs in, the system can generate and bind a usable wallet address to the account. This allows users to start depositing, trading, and withdrawing without needing to prepare a complex wallet setup in advance.
+
+</details>
+
+<details>
+
+<summary>What time zone is used for registration time on TurboFlow?</summary>
+
+TurboFlow currently displays registration time in UTC (Coordinated Universal Time). If you would like to convert it to another local time zone, please adjust it based on the UTC time shown. For example, Beijing time is UTC+8.
+
+</details>
+
+<details>
+
 <summary>Why can’t I log in?</summary>
 
 If you’re unable to log in, try switching between mobile data and Wi-Fi, disabling any network proxy, or reopening the app or webpage. App users may also try reinstalling the app. If the issue continues, please contact [official support](https://t.me/turboflow_xyz).
@@ -97,7 +113,7 @@ TurboFlow trading vouchers are single-use promotional credits. The voucher itsel
 
 <summary>How do I become an agent or partner?</summary>
 
-Users or communities interested in growing with TurboFlow can explore the platform’s [Referral Program](../growth/referral-program.md) and [Partnership Program](../growth/affiliate-program.md).
+Users or communities interested in growing with TurboFlow can explore the platform’s [Referral Program](../growth/referral-program.md) and [Affiliate Program](../growth/affiliate-program.md).
 
 If you have your own community, growth channel, or relevant trading user base, please refer to the official program details or [contact the TurboFlow team](https://t.me/turboflow_xyz) through the platform’s official channels for the latest participation requirements.
 
@@ -167,6 +183,14 @@ Event Contracts Settlement pricing is determined through TurboFlow’s oracle-ba
 
 <summary>How is the return rate determined?</summary>
 
-Each Event Contract displays a return rate before entry. The return rate is currently determined through platform risk management configuration and may vary depending on the market, duration, and platform conditions. Users should always rely on the live product interface for the latest displayed return rate.
+TurboFlow’s Event Contract return rate is dynamically quoted based on real-time market conditions, rather than being fixed by the platform. As pricing and market participation change, the return rate may also adjust in real time. This is designed to better reflect live market conditions and provide more competitive pricing to users.
+
+</details>
+
+<details>
+
+<summary>Can I hold Event Contracts across different durations at the same time?</summary>
+
+Yes. Users may participate in Event Contracts across multiple durations at the same time, provided that both the relevant duration-level limits and the overall platform-level limit are respected. All unsettled positions together must remain within the currently applicable limits shown on the platform.
 
 </details>

@@ -97,7 +97,7 @@ TurboFlow trading vouchers are single-use promotional credits. The voucher itsel
 
 <summary>How do I become an agent or partner?</summary>
 
-Users or communities interested in growing with TurboFlow can explore the platform’s [Referral Program](../growth/referral-program.md) and [Partnership Program](../growth/partnership-program.md).
+Users or communities interested in growing with TurboFlow can explore the platform’s [Referral Program](../growth/referral-program.md) and [Partnership Program](../growth/affiliate-program.md).
 
 If you have your own community, growth channel, or relevant trading user base, please refer to the official program details or [contact the TurboFlow team](https://t.me/turboflow_xyz) through the platform’s official channels for the latest participation requirements.
 

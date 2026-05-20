@@ -1,6 +1,6 @@
 ---
 description: >-
-  A user referral program designed to support platform growth and broader
+  A retail user referral program designed to support platform growth and broader
   participation on TurboFlow.
 icon: people-arrows
 ---

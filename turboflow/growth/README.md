@@ -17,7 +17,7 @@ This section brings together the main programs that help users, communities, and
 
 A user growth program that allows participants to invite others to TurboFlow and earn based on eligible platform activity.
 
-#### Partnership Program
+#### Affiliate Program
 
 A broader collaboration framework for agents, communities, partners, and growth channels interested in building with TurboFlow.
 

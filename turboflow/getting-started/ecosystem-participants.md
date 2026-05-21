@@ -33,8 +33,8 @@ TurboFlow works with ecosystem partners who can support user growth, regional ex
 
 This may include:
 
-* regional partners
-* community owners
+* Regional Partners
+* Community Owners
 * TurboFlow Ambassadors
 * KOLs (content creator/ blogger / Social media sepcialist)
 

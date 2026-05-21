@@ -26,7 +26,6 @@ The Affiliate Program may be suitable for:
 
 * community leaders
 * trading communities
-* agents and affiliates
 * ecosystem or channel partners
 * KOLs
 * ambassadors

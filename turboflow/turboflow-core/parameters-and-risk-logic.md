@@ -146,6 +146,10 @@ Before trading, users should fully understand:
 
 TurboFlow does not guarantee profits, execution outcomes, or protection from losses. Users should trade responsibly and should not trade with funds they cannot afford to lose.
 
+**For detailed tier definitions, bracket caps, leverage levels, and margin formulas, please refer to the TurboFlow Perpetuals: Margin and Leverage Framework PDF below.**
+
+{% file src="../../.gitbook/assets/TurboFlow Perpetuals_Margin and Leverage Framework.pdf" %}
+
 ### Important Notice
 
 This page provides a general explanation of TurboFlow’s margin and risk logic. Specific parameters may vary by market, asset, position size, liquidity conditions, and platform configuration.

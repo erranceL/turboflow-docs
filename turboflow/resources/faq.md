@@ -127,7 +127,7 @@ If you have your own community, growth channel, or relevant trading user base, p
 
 <summary>What trading models does TurboFlow support?</summary>
 
-TurboFlow currently supports two trading models for [perpetual trading](../products/perpetual-trading.md): **Flat-Fee Model** and **Profit-Sharing Model**. The Flat-Fee Model charges trading costs upfront, while the Profit-Sharing Model does not charge fees or slippage at entry and instead applies a share only when a trade closes in profit. Users should always refer to the live product interface for the latest applicable model details and conditions.
+TurboFlow currently supports two trading models for [perpetual trading](../products/turbo-perps.md): **Flat-Fee Model** and **Profit-Sharing Model**. The Flat-Fee Model charges trading costs upfront, while the Profit-Sharing Model does not charge fees or slippage at entry and instead applies a share only when a trade closes in profit. Users should always refer to the live product interface for the latest applicable model details and conditions.
 
 </details>
 
@@ -135,7 +135,7 @@ TurboFlow currently supports two trading models for [perpetual trading](../produ
 
 <summary>How are trading fees charged?</summary>
 
-TurboFlow’s  perps trading fee treatment depends on [the trading model](../products/perpetual-trading.md#trading-models) in use. Under the **Flat-Fee Model**, opening and closing fees are charged upfront when a position is opened, and no additional fee is charged again at closing. Under the **Profit-Sharing Model,** no fee or slippage is charged at entry, and the platform only takes a share if the trade closes in profit. Users should always refer to the live product interface for the latest applicable fee details.
+TurboFlow’s  perps trading fee treatment depends on [the trading model](../products/turbo-perps.md#trading-models) in use. Under the **Flat-Fee Model**, opening and closing fees are charged upfront when a position is opened, and no additional fee is charged again at closing. Under the **Profit-Sharing Model,** no fee or slippage is charged at entry, and the platform only takes a share if the trade closes in profit. Users should always refer to the live product interface for the latest applicable fee details.
 
 </details>
 

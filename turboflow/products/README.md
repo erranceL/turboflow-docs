@@ -7,17 +7,17 @@ icon: chart-waterfall
 
 TurboFlow is building a broader set of market products for retail users — not just a single trading interface, but a growing range of ways to participate.
 
-This section introduces the product experiences currently available on TurboFlow, from perpetual trading to event-based formats, as well as the supporting systems that make those products work.
+This section introduces the product experiences currently available on TurboFlow, from classic perpetual trading to newer market formats designed around speed, accessibility, and differentiated user experience.
 
-### What you’ll find here
+## What you’ll find here
 
-#### Perpetual Trading
+#### Classic Perps
 
-Explore TurboFlow’s core perpetual trading experience, including high-leverage access, market participation, and flexible trading models.
+Explore TurboFlow’s standard perpetual trading experience, built around transparent leverage, margin, funding, and tier-based risk controls.
 
-#### Event Contracts
+#### Turbo Perps
 
-Learn how TurboFlow’s short-cycle, event-based products allow users to take a view on market outcomes with fixed settlement timing.
+Discover TurboFlow’s next-generation perpetual format, designed around zero trading fees, zero spread execution, and a dynamic profit-share model on winning trades.
 
 #### TurboFlow App
 

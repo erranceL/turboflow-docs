@@ -85,9 +85,9 @@ TurboFlow also uses a maintenance deduction mechanism so transitions between bra
 
 For traders, the key point is simple: larger positions and riskier markets require more conservative margin treatment.
 
-For the full tier-by-tier and bracket-by-bracket margin table, including leverage, initial margin, maintenance margin, and maintenance deduction values for each asset, refer to the Classic Perps Margin Reference.
+**For the full tier-by-tier and bracket-by-bracket margin table, including leverage, initial margin, maintenance margin, and maintenance deduction values for each asset, refer to the Classic Perps Margin PDF below.**
 
-Link placeholder: \[Insert margin reference link here]
+{% file src="../../.gitbook/assets/TurboFlow Perpetuals_Margin and Leverage Framework.pdf" %}
 
 ### Funding
 

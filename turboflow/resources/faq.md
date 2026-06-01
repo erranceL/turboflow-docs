@@ -121,29 +121,37 @@ If you have your own community, growth channel, or relevant trading user base, p
 
 ***
 
-### Perpetual Trading
+### Turbo Perps
 
 <details>
 
-<summary>What trading models does TurboFlow support?</summary>
+<summary>Do I pay a fee when I lose?</summary>
 
-TurboFlow currently supports two trading models for [perpetual trading](../products/turbo-perps.md): **Flat-Fee Model** and **Profit-Sharing Model**. The Flat-Fee Model charges trading costs upfront, while the Profit-Sharing Model does not charge fees or slippage at entry and instead applies a share only when a trade closes in profit. Users should always refer to the live product interface for the latest applicable model details and conditions.
+No. Zero fee on losing trades.
 
 </details>
 
 <details>
 
-<summary>How are trading fees charged?</summary>
+<summary>What fee do I pay when I win?</summary>
 
-TurboFlow’s  perps trading fee treatment depends on [the trading model](../products/turbo-perps.md#trading-models) in use. Under the **Flat-Fee Model**, opening and closing fees are charged upfront when a position is opened, and no additional fee is charged again at closing. Under the **Profit-Sharing Model,** no fee or slippage is charged at entry, and the platform only takes a share if the trade closes in profit. Users should always refer to the live product interface for the latest applicable fee details.
+You can see the Fee ladder in the platform.
 
 </details>
 
 <details>
 
-<summary>How do funding fees work on TurboFlow?</summary>
+<summary>What happens if I'm liquidated?</summary>
 
-The current funding rate for each trading pair is shown at the top of the Trading page. A positive funding rate means longs pay shorts, while a negative funding rate means shorts pay longs. Funding is settled when the countdown ends. Under the Profit-Sharing Model, the benefiting side receives 70% of the effective funding amount, while under the Flat-Fee Model, the benefiting side receives 100%.
+User’s margin goes to the pool.
+
+</details>
+
+<details>
+
+<summary>How do I avoid liquidation?</summary>
+
+Add margin or reduce position size to push liq price further away.
 
 </details>
 

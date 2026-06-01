@@ -9,128 +9,259 @@ icon: pump-impeller
 
 ### A New Type of Perpetual Trading
 
-Turbo Perps are a next-generation perpetual trading product designed for high-speed speculation, asymmetric upside, and simplified trading mechanics.
+Turbo Perps are leveraged perpetual contracts that track live crypto prices with **no trading fees and no spread**. Instead of a fixed fee on every trade, the platform takes a dynamic share of your profit on winning trades only.&#x20;
 
-Unlike traditional perpetual futures that charge fixed trading fees and spreads, Turbo Perps use a dynamic Profit Share model — traders only share a portion of profits on winning trades.
+**Losing trades pay nothing.**&#x20;
 
-This creates a trading experience with:
+This product offers high leverage and asymmetric payouts.
 
-* Zero trading fees
-* Zero spread execution
-* Simplified pricing
-* Transparent liquidation
-* High leverage access
-* Asymmetric payout potential
+Key properties at a glance:
 
-Turbo Perps are built for traders who want fast exposure to crypto price movements without the complexity of traditional derivatives infrastructure. The system is designed in such a way that both traders’ and platform’s incentives are aligned.
+* **Zero trading fees** — no maker/taker charges
+* **Zero spread** — you open and close at the reference price
+* **Profit Share only** — the platform earns only when you earn
+* **Isolated margin** — each position has its own dedicated collateral
+* **Up to 1000x leverage** on BTC, ETH, and other major pairs
 
-### How Turbo Perps Work
+#### How Turbo Perps compare to Classic Perps
 
-Turbo Perps track the underlying market price of an asset such as BTC, ETH, SOL, or other supported cryptocurrencies.
+| Feature            | Classic Perps         | Turbo Perps                  |
+| ------------------ | --------------------- | ---------------------------- |
+| Trading fee        | 0.02–0.08% per side   | Zero                         |
+| Spread             | Embedded in execution | Zero                         |
+| Fee when losing    | Charged regardless    | Zero                         |
+| Fee when winning   | Charged regardless    | Dynamic profit share only    |
+| Platform incentive | Earns on every trade  | Earns only when trader earns |
 
-When you open a position:
+### The Profit Share Formula (P\_close)
 
-* You choose LONG or SHORT
-* Select leverage
-* Enter position size
-* Your PnL moves directly with market price changes
+When you close a winning position you don't receive the raw market price P(T). You receive a slightly adjusted closing price P\_close that reflects the platform's profit share cut. The key property: the larger the price move, the smaller the cut — so big directional trades are more profitable on a percentage basis.
 
-Unlike standard perpetual futures:
+#### Full formula
 
-* There is no traditional maker/taker fee
-* No bid/ask spread markup
-* No hidden execution slippage model
+P\_close = P\_entry + Capture \* (P\_exit - P\_entry)
 
-Instead, Turbo Perps use a Profit Share system on profitable trades.
+&#x20;                                   1 - base\_rate
 
-If your trade loses money, you only lose your position PnL, the platform share is zero.
+Capture  =  ----------------------------------------
 
-If your trade wins, a dynamic percentage of the profit is shared with the platform, thus lining up incentives for the user and the platform.
+&#x20;                      1  +  market\_impact  +  size\_impact
 
-The Profit share model explained\
-\
-Smaller and shorter market moves generally have higher profit share rates, while larger directional moves allow traders to retain more of their profits.
+&#x20;                                                           1
 
-#### Example
+market\_impact  =  ----------------------------------------------
 
-Example 1 — Small Move
+&#x20;                                 (move \* rate\_multiplier)^rate\_exponent
 
-* BTC Entry: 100,000
-* BTC Exit: 100,100
-* Raw Move: +0.10%
+&#x20;                                           bet\_amount \* leverage
 
-A portion of the profit is shared with the platform.
+size\_impact    =  -----------------------------------------------
 
-Example 2 — Large Move
+&#x20;                                1,000,000 \* move \* position\_multiplier
 
-* BTC Entry: 100,000
-* BTC Exit: 110,000
-* Raw Move: +10%
+move  =  | P\_exit / P\_entry  -  1 |   (absolute % price change)
 
-The trader retains a significantly larger percentage of profits as the move size increases.
+#### What each term does
 
-This creates an asymmetric payoff structure favoring large directional moves as depicted in a screenshot taken from the official website below.\
-![](<../../.gitbook/assets/image (20).png>)
+<table data-header-hidden><thead><tr><th valign="top">Term</th><th valign="top">What it controls</th><th valign="top">BTC value</th></tr></thead><tbody><tr><td valign="top">base_rate</td><td valign="top">Floor cut — minimum platform share even on infinite moves</td><td valign="top">10%  (0.10)</td></tr><tr><td valign="top">rate_multiplier</td><td valign="top">How fast the cut shrinks as the move grows — higher = faster decay</td><td valign="top">15,000</td></tr><tr><td valign="top">rate_exponent</td><td valign="top">Curve shape of the decay — 1 = linear</td><td valign="top">1</td></tr><tr><td valign="top">position_multiplier</td><td valign="top">Scales the size_impact term per-pair (reflects liquidity depth)</td><td valign="top">1,384.6</td></tr><tr><td valign="top">bust_buffer</td><td valign="top">Extra offset for stop/liquidation trigger price (not in P_close)</td><td valign="top">0.036%</td></tr><tr><td valign="top">leverage</td><td valign="top">Your chosen leverage multiplier</td><td valign="top">up to 1000x</td></tr><tr><td valign="top">bet_amount</td><td valign="top">Your position size in USD (collateral x leverage)</td><td valign="top">user input</td></tr></tbody></table>
 
-### Liquidation & Risk Management
+#### Step-by-step worked example
 
-Turbo Perps include a real-time risk engine designed to maintain platform stability during volatile market conditions.
+Scenario: BTC long, $1,000 margin at 10x leverage.
 
-Risk parameters may dynamically adjust based on:
+_Entry price  P\_entry  = $100,000_
 
-* Asset volatility
-* Market liquidity
-* Position leverage
-* Market stress conditions
+_Exit price   P\_exit   = $105,000   (+5% move)_
 
-The system may adjust:
+_bet\_amount             = $10,000   (margin x leverage)_
 
-* Maximum leverage
-* Maintenance margin requirements
-* Liquidation thresholds
-* Position limits
+_base\_rate              = 0.10_
 
-This dynamic risk architecture helps protect both traders and platform integrity.
+_rate\_multiplier        = 15,000_
 
-### Why Turbo Perps Are Different
+_rate\_exponent          = 1_
 
-* **Zero Trading Fees:** No traditional maker or taker fees.
-* **Zero Spread Model:** Positions are executed using transparent pricing mechanisms rather than hidden spread widening.
-* **Simplified User Experience:** No complex funding mechanics or hidden financing costs.
-* **High Convexity Exposure:** Designed for traders seeking outsized upside on large market moves.
-* **Dynamic Risk Engine:** Adaptive parameters help manage extreme market volatility.
+_position\_multiplier    = 1,384.6_
 
-### Margin & Liquidation
+{% stepper %}
+{% step %}
+Move size  move = |105,000 / 100,000 - 1| = 0.05  (5%)
+{% endstep %}
 
-Turbo Perps use an isolated margin system.
+{% step %}
+Market impact  = 1 / (0.05 x 15,000)^1  =  1 / 750  =  0.001333
+{% endstep %}
 
-Each position has:
+{% step %}
+Size impact  = 10,000 / (1,000,000 x 0.05 x 1,384.6)  =  0.0001446
+{% endstep %}
 
-* Initial margin requirement
-* Maintenance margin requirement
+{% step %}
+Capture ratio  = (1 - 0.10) / (1 + 0.001333 + 0.0001446)  =  0.90 / 1.001478  =  0.8987
+{% endstep %}
 
-If account equity falls below maintenance margin requirements, the position may be liquidated.
+{% step %}
+P\_close  = 100,000 + 0.8987 x 5,000  =  $104,493.50
+{% endstep %}
+{% endstepper %}
 
-Liquidation thresholds vary depending on:
+Raw profit on $10,000 position  =  $500.00
 
-* Asset volatility
-* Position size
-* Leverage
-* Market conditions
+Your actual profit               =  $449.35
 
-Higher leverage positions have smaller liquidation buffers and higher liquidation risk.
+Platform's share                 =  $ 50.65   (10.1% of raw profit)
 
-### Important Notes
+#### How the profit share changes with move size (BTC, $1,000 position, 10x)
 
-Turbo Perps are high-risk leveraged products.
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-Prices can move rapidly and leveraged positions may be liquidated quickly.
+_On large moves (above \~1%) the effective fee converges to base\_rate (10%). Only on very small moves (<0.5%) does the cut noticeably exceed 10%. This asymmetry rewards traders who catch big directional moves._
 
-Users should understand:
+#### Trigger price for stop-loss and liquidation
 
-* Leverage magnifies both gains and losses
-* Liquidation can occur during volatile conditions
-* Profit share applies only to profitable trades
-* Risk parameters may change dynamically based on market conditions
+The price at which a stop or liquidation actually fires is adjusted by a small per-pair buffer to prevent triggering on micro-wicks:
 
-Always trade responsibly.
+P\_trigger = P\_close  x  (1  +  trade\_sign  x  bust\_buffer)
+
+trade\_sign:   +1 for Long,   -1 for Short
+
+bust\_buffer:  BTC = 0.036%,  ETH = 0.038%,  DOGE = 0.040%
+
+### Margin System
+
+Turbo Perps use **Isolated Margin** only. Each position has its own collateral ring-fenced from other positions — a loss on one position cannot affect another.
+
+#### Initial Margin Rate (IMR)
+
+The minimum collateral needed to open a position:
+
+IMR = 1 / leverage
+
+_Example  —  10x leverage:  IMR = 10%.  You post $1,000 to open a $10,000 position._
+
+#### Maintenance Margin Rate (MMR)
+
+The minimum ongoing collateral ratio. Falling below this triggers liquidation. Turbo Perps (Profit Share mode) use the following formula:
+
+&#x20;_MMR = min(min(max(0.5 x IMR,  br + br x ln(1000/leverage)),  maxbr),  pair.maxMMR)_
+
+&#x20; _br          =  base maintenance rate for your notional tier_
+
+&#x20; _maxbr       =  7000 / leverage / 10000   (hard ceiling)_
+
+&#x20; _pair.maxMMR =  exchange-set maximum for this pair_
+
+{% hint style="info" %}
+At low leverage (e.g. 10x) the floor of 0.5 x IMR = 5% dominates. At very high leverage (100x+) the formula term takes over. Profit Share mode has no deduction offset (MD = 0) unlike Flat-Fee V3.
+{% endhint %}
+
+#### Maintenance Margin (MM) in USD
+
+MM  =  Position Size (USD)  x  MMR
+
+_Example  —  $10,000 position at MMR 5%:  MM = $500.  Your buffer before liquidation is $500._
+
+#### Leverage vs margin buffer — quick reference
+
+| 5x   | 20.0% | 10.0% | \~10% adverse move  |
+| ---- | ----- | ----- | ------------------- |
+| 10x  | 10.0% |  5.0% | \~5% adverse move   |
+| 20x  |  5.0% |  2.5% | \~2.5% adverse move |
+| 50x  |  2.0% |  1.0% | \~1% adverse move   |
+| 100x |  1.0% |  0.5% | \~0.5% adverse move |
+
+### Liquidation
+
+#### Liquidation & bankruptcy price formulas
+
+| Direction    | Liquidation price                        | Bankruptcy price                  |
+| ------------ | ---------------------------------------- | --------------------------------- |
+| Long  (Buy)  | Entry  -  (Margin - MM) / Size  x  Entry | Entry  -  Margin / Size  x  Entry |
+| Short (Sell) | Entry  +  (Margin - MM) / Size  x  Entry | Entry  +  Margin / Size  x  Entry |
+
+{% hint style="info" %}
+If either result is negative it is floored at $0.
+{% endhint %}
+
+#### Worked example  —  BTC Long 10x
+
+Entry price  =  $100,000
+
+Position     =  $10,000  (0.1 BTC equivalent)
+
+Margin       =  $1,000   (10x leverage, IMR 10%)
+
+MMR          =  5%   =>   MM = $500
+
+Liquidation price  =  100,000 - (1,000 - 500) / 10,000 x 100,000
+
+&#x20;                             \=  100,000 - 5,000
+
+&#x20;                             \=  $95,000
+
+Bankruptcy price   =  100,000 - 1,000 / 10,000 x 100,000
+
+&#x20;                               \=  100,000 - 10,000
+
+&#x20;                               \=  $90,000
+
+The engine tries to fill at $95,000. If no fill is available, the ultimate floor is the $90,000 bankruptcy price.
+
+#### Trigger condition
+
+| Direction | Liquidation fires when…           |
+| --------- | --------------------------------- |
+| Long      | Mark Price  <=  Liquidation Price |
+| Short     | Mark Price  >=  Liquidation Price |
+
+#### Profit Share adjustment in liquidation (important)
+
+For a winning Profit Share position, the system uses P-Close adjusted PnL at all times
+
+Classic Perps:    Effective equity  =  Collateral  +  Full unrealised PnL
+
+Turbo Perps:      Effective equity  =  Collateral  +  P-Close adjusted PnL (lower than full PnL when trade is winning)
+
+{% hint style="info" %}
+On a winning position your margin ratio improves more slowly than a standard perp because the profit share is pre-discounted in the equity calculation. This is expected — always rely on the platform's displayed liquidation price.
+{% endhint %}
+
+### Funding Fee
+
+An interest charge accrues on open positions on various cycles ( depending on pair) to reflect the cost of leveraged exposure.
+
+### Dynamic Risk Engine
+
+A real-time risk engine monitors market conditions and may tighten parameters during periods of extreme volatility or low liquidity. Existing open positions are not immediately affected — changes apply to new positions only.
+
+| Maximum leverage      | Reduced   | New positions capped at lower leverage  |
+| --------------------- | --------- | --------------------------------------- |
+| MMR                   | Increased | New positions need more margin buffer   |
+| Liquidation threshold | Tightened | Liquidation price moves closer to entry |
+| Max position size     | Reduced   | Large opens restricted                  |
+
+### Pair Parameters Reference
+
+These are the live configuration values used in P\_close calculations, funding, and liquidation triggers.
+
+| BTC  | 10% | 15,000 | 1 | 1,384.6 | 0.036% | 1000x |
+| ---- | --- | ------ | - | ------- | ------ | ----- |
+| ETH  | 10% | 15,000 | 1 | 923.1   | 0.038% | 1000x |
+| DOGE | 10% | 15,000 | 1 | 401.4   | 0.040% | 1000x |
+
+{% hint style="info" %}
+BTC, ETH, and DOGE share the same base\_rate and rate\_multiplier. The position\_multiplier reflects each pair's liquidity depth — higher = a given position size has less fee impact.
+{% endhint %}
+
+### Risk Disclosure
+
+Turbo Perps are high-risk leveraged products. Prices can move rapidly and leveraged positions may be liquidated within seconds.
+
+* Leverage magnifies both gains and losses — 10x means 100% margin loss on a 10% adverse move.
+* Liquidation can happen very quickly during volatile market conditions.
+* The profit share cut is higher on small moves — scalping strategies face a larger effective fee.
+* P-Close adjustment means winning positions have less equity cushion than raw PnL suggests.
+* Risk parameters can change dynamically; monitor your open positions and margin ratio regularly.
+* Past performance of any strategy does not guarantee future results.
+
+_Only trade with capital you can afford to lose entirely. Keep leverage conservative and use the platform risk tools available to you._

@@ -17,7 +17,7 @@ TurboFlow welcomes market makers interested in supporting liquidity, execution q
 
 Relevant documentation and integration details are being expanded over time. If you are interested in working with TurboFlow as a market maker, please contact us through our official channels.
 
-Contact detais: [contact@tf.xyz](mailto:contact@tf.xyz)
+Contact detais: [contacts@tf.xyz](mailto:contact@tf.xyz)
 
 ### API Traders
 
@@ -25,7 +25,7 @@ TurboFlow is also building toward broader support for API-based trading particip
 
 Relevant documentation and access information will be opened further over time. If you are interested in connecting as an API trader, please contact us through official channels for the latest status.
 
-Contact detais: [contact@tf.xyz](mailto:contact@tf.xyz)
+Contact detais: [contacts@tf.xyz](mailto:contact@tf.xyz)
 
 ### Affiliates
 

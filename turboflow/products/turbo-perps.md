@@ -37,29 +37,41 @@ Key properties at a glance:
 
 When you close a winning position you don't receive the raw market price P(T). You receive a slightly adjusted closing price P\_close that reflects the platform's profit share cut. The key property: the larger the price move, the smaller the cut — so big directional trades are more profitable on a percentage basis.
 
-#### Full formula
+### Full Formula
 
-P\_close = P\_entry + Capture \* (P\_exit - P\_entry)
+**Close Price**
 
-&#x20;                                   1 - base\_rate
+$$
+P_{close} = P_{entry} + Capture \times (P_{exit} - P_{entry})
+$$
 
-Capture  =  ----------------------------------------
+**Capture**
 
-&#x20;                      1  +  market\_impact  +  size\_impact
+$$
+Capture = \frac{1 - base\_rate}{1 + market\_impact + size\_impact}
+$$
 
-&#x20;                                                           1
+**Market Impact**
 
-market\_impact  =  ----------------------------------------------
+$$
+market\_impact = \frac{1}{(move \times rate\_multiplier)^{rate\_exponent}}
+$$
 
-&#x20;                                 (move \* rate\_multiplier)^rate\_exponent
+**Size Impact**
 
-&#x20;                                           bet\_amount \* leverage
+$$
+size\_impact = \frac{bet\_amount \times leverage}{1{,}000{,}000 \times move \times position\_multiplier}
+$$
 
-size\_impact    =  -----------------------------------------------
+**Move**
 
-&#x20;                                1,000,000 \* move \* position\_multiplier
+$$
+move = \left| \frac{P_{exit}}{P_{entry}} - 1 \right|
+$$
 
-move  =  | P\_exit / P\_entry  -  1 |   (absolute % price change)
+Where:
+
+* `move` is the absolute percentage price change.
 
 #### What each term does
 

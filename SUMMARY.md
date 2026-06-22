@@ -29,3 +29,4 @@
   * [Tutorial](turboflow/resources/tutorial.md)
   * [FAQ](turboflow/resources/faq.md)
   * [Brand Kit](turboflow/resources/brand-kit.md)
+  * [Fee Schedule](turboflow/resources/fee-schedule.md)

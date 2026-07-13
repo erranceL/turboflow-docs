@@ -9,10 +9,12 @@ icon: pump-impeller
 
 <figure><img src="../../.gitbook/assets/banner+gitbook.png" alt=""><figcaption><p>Retail-first markets, built for broader participation.</p></figcaption></figure>
 
-TurboFlow is an onchain trading ecosystem built to make complex financial products simpler, faster, and more accessible for retail users.
+TurboFlow is an on-chain trading ecosystem at the intersection of **perpetual contracts** and **prediction markets**.
 
-We believe powerful market opportunities should not be reserved for institutions, insiders, or the privileged few.
+Built on the belief that **trading should be simple, fair, and accessible**, TurboFlow gives retail users access to professional-grade market infrastructure through a transparent, high-liquidity platform designed for the next generation of global traders.
 
-That’s why we’re building a simpler, more transparent, and more participatory on-chain trading ecosystem — one where retail users can take the lead in what comes next.
+In 2026, TurboFlow raised a **$6 million Seed round led by** [**Pantera Capital**](https://panteracapital.com/investing-in-turboflow/), with participation from Susquehanna Crypto and Digital Currency Group (DCG), accelerating its mission to make powerful market access available to everyone.
 
-**Everyone gets a seat at the table.**
+**Trading, made simple.**
+
+**Everyone gets a seat at TurboFlow.**

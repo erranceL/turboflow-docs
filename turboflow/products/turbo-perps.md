@@ -159,7 +159,7 @@ The minimum ongoing collateral ratio. Falling below this triggers liquidation. T
 
 &#x20; _br          =  base maintenance rate for your notional tier_
 
-&#x20; _maxbr       =  7000 / leverage / 10000   (hard ceiling)_
+&#x20; _maxbr       =  7500 / leverage / 10000   (hard ceiling)_
 
 &#x20; _pair.maxMMR =  exchange-set maximum for this pair_
 

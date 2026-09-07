@@ -5,11 +5,11 @@ description: >-
 icon: pump-impeller
 ---
 
-# Turbo Perps
+# 1000x Perpetual
 
 ### A New Type of Perpetual Trading
 
-Turbo Perps are leveraged perpetual contracts that track live crypto prices with **no trading fees and no spread**. Instead of a fixed fee on every trade, the platform takes a dynamic share of your profit on winning trades only.&#x20;
+1000x Perps are leveraged perpetual contracts that track live crypto prices with **no trading fees and no spread**. Instead of a fixed fee on every trade, the platform takes a dynamic share of your profit on winning trades only.&#x20;
 
 **Losing trades pay nothing.**&#x20;
 
@@ -23,9 +23,9 @@ Key properties at a glance:
 * **Isolated margin** — each position has its own dedicated collateral
 * **Up to 1000x leverage** on BTC, ETH, and other major pairs
 
-#### How Turbo Perps compare to Classic Perps
+#### How 1000x Perps compare to Classic Perps
 
-| Feature            | Classic Perps         | Turbo Perps                  |
+| Feature            | Classic Perps         | 1000x Perps                  |
 | ------------------ | --------------------- | ---------------------------- |
 | Trading fee        | 0.02–0.08% per side   | Zero                         |
 | Spread             | Embedded in execution | Zero                         |
@@ -267,7 +267,7 @@ BTC, ETH, and DOGE share the same base\_rate and rate\_multiplier. The position\
 
 ### Risk Disclosure
 
-Turbo Perps are high-risk leveraged products. Prices can move rapidly and leveraged positions may be liquidated within seconds.
+1000x Perps are high-risk leveraged products. Prices can move rapidly and leveraged positions may be liquidated within seconds.
 
 * Leverage magnifies both gains and losses — 10x means 100% margin loss on a 10% adverse move.
 * Liquidation can happen very quickly during volatile market conditions.

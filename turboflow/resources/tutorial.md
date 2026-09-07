@@ -85,15 +85,15 @@ The trading panel allows users to configure the key parts of an order before ope
 Before placing an order, review the following settings in the order panel:
 
 * **Order Type**\
-  &#xNAN;_&#x43;hoose the order type supported by the current interface, such as Market or Limit._
+  _&#x43;hoose the order type supported by the current interface, such as Market or Limit._
 * **Position Direction**\
-  &#xNAN;_&#x43;hoose whether you want to open a Long or Short position._
+  _&#x43;hoose whether you want to open a Long or Short position._
 * **Collateral Asset**\
-  &#xNAN;_&#x53;elect the supported collateral asset available in your account balance._
+  _&#x53;elect the supported collateral asset available in your account balance._
 * **Order Size**\
-  &#xNAN;_&#x45;nter the amount you want to use for the position._
+  _&#x45;nter the amount you want to use for the position._
 * **Leverage**\
-  &#xNAN;_&#x53;et leverage according to the selected market and the options currently shown in the live interface._
+  _&#x53;et leverage according to the selected market and the options currently shown in the live interface._
 
 After reviewing these settings, confirm the order through the trading panel.
 

@@ -7,7 +7,7 @@ icon: pump-impeller
 
 # What is TurboFlow
 
-<figure><img src="../../.gitbook/assets/banner+gitbook.png" alt=""><figcaption><p>Retail-first markets, built for broader participation.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/banner new.png" alt=""><figcaption><p>Retail-first markets, built for broader participation.</p></figcaption></figure>
 
 TurboFlow is an on-chain trading ecosystem at the intersection of **perpetual contracts** and **prediction markets**.
 

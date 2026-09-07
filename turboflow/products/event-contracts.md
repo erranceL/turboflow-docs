@@ -62,6 +62,7 @@ TurboFlow Event Contracts are currently available on:
 * Bitcoin (BTC)
 * Ether (ETH)
 * Gold (XAU)
+* Silver(XAG)
 
 Users may hold Event Contracts across multiple durations at the same time. The current limit is 200 USDT per duration. The live product interface should always be checked for the latest supported markets, durations, and limits.
 

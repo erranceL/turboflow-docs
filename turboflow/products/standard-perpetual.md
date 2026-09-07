@@ -5,19 +5,19 @@ description: >-
 icon: chart-line-up
 ---
 
-# Classic Perps
+# Standard Perpetual
 
 ### Overview
 
-Classic Perps let traders take leveraged **long or short exposure without a fixed expiry**.
+Standard Perps let traders take leveraged **long or short exposure without a fixed expiry**.
 
-On TurboFlow, Classic Perps are built to feel familiar to users of major exchanges: open a position, choose your leverage, manage margin, and close when you want.
+On TurboFlow, Standard Perps are built to feel familiar to users of major exchanges: open a position, choose your leverage, manage margin, and close when you want.
 
 The product uses a transparent **tier-based risk framework**, with the highest leverage available on the deepest markets and more conservative limits applied to lower-liquidity pairs. Tier assignments are reviewed regularly to keep risk settings aligned with market conditions.
 
 ### What Traders Should Understand First
 
-There are four core parts to TurboFlow Classic Perps:
+There are four core parts to TurboFlow Standard Perps:
 
 * **leverage**, which determines how much exposure you can take relative to your collateral
 * **margin**, which determines how much collateral you need to open and maintain a position
@@ -28,7 +28,7 @@ TurboFlow is designed to make those rules visible rather than hiding them behind
 
 ### Trading Costs
 
-TurboFlow Classic Perps use a standard **flat-fee** model, similar to the structure traders are used to on major exchanges.
+TurboFlow Standard Perps use a standard **flat-fee** model, similar to the structure traders are used to on major exchanges.
 
 When trading, users pay:
 
@@ -41,7 +41,7 @@ For the full list of trading pairs and applicable fees, refer to the [Parameters
 
 ### Margin and Leverage Framework
 
-TurboFlow uses a 4-tier risk framework for Classic Perps.
+TurboFlow uses a 4-tier risk framework for Standard Perps.
 
 Instead of assigning the same leverage to every asset, TurboFlow groups markets by liquidity and spread quality, then applies leverage caps and position limits that match the underlying risk of that market.
 
@@ -166,7 +166,7 @@ This means liquidation risk is not only about headline leverage. It is also shap
 
 ### Why This Structure Exists
 
-TurboFlow's Classic Perps framework is built to balance three goals:
+TurboFlow's Standard Perps framework is built to balance three goals:
 
 * high leverage where liquidity can support it
 * tighter controls where markets are thinner or more volatile
@@ -176,7 +176,7 @@ The result is a perp product that aims to be flexible for active traders without
 
 ### Important Risk Notice
 
-Classic Perps are leveraged products and are not suitable for all users.
+Standard Perps are leveraged products and are not suitable for all users.
 
 High leverage can magnify both gains and losses. Liquidation can happen quickly, especially in volatile markets or larger size brackets.
 

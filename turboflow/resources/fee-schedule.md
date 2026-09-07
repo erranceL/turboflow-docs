@@ -205,6 +205,6 @@ The effective fee in this example is **10.1% of gross profit**.
 
 ### Related pages
 
-* [Classic Perps](../products/classic-perps.md)
-* [Turbo Perps](../products/turbo-perps.md)
+* [Classic Perps](../products/standard-perpetual.md)
+* [Turbo Perps](../products/1000x-perpetual.md)
 * [Parameters & Risk Logic](../turboflow-core/parameters-and-risk-logic.md)

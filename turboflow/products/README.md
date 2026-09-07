@@ -5,30 +5,44 @@ icon: chart-waterfall
 
 # PRODUCTS
 
-TurboFlow is building a broader set of market products for retail users — not just a single trading interface, but a growing range of ways to participate.
+TurboFlow offers multiple ways to participate in markets, from perpetual trading and short-duration price views to predictions on real-world events.
 
-This section introduces the product experiences currently available on TurboFlow, from classic perpetual trading to newer market formats designed around speed, accessibility, and differentiated user experience.
+Rather than building around a single trading format, TurboFlow brings together different market experiences designed for different trading styles, time horizons, and levels of participation.
 
-## What you’ll find here
+### What you’ll find here
 
-#### Classic Perps
+#### Standard Perpetual
 
-Explore TurboFlow’s standard perpetual trading experience, built around transparent leverage, margin, funding, and tier-based risk controls.
+TurboFlow’s standard perpetual trading experience, with familiar long and short positions, leverage, margin, funding, and tier-based risk controls.
 
-#### Turbo Perps
+#### 1000x Perpetual
 
-Discover TurboFlow’s next-generation perpetual format, designed around zero trading fees, zero spread execution, and a dynamic profit-share model on winning trades.
+A differentiated perpetual trading format built around zero trading fees, zero spread execution, and a dynamic profit-share model on profitable trades.
+
+#### Event Contracts
+
+Short-duration directional contracts that allow users to take a Higher or Lower view on supported markets across multiple settlement periods.
+
+Current supported markets include crypto and commodities such as Bitcoin, Ether, Gold, and Silver.
+
+#### Prediction
+
+Take a view on the outcomes of supported sports, esports, and other event-based markets, from individual matches to tournament and qualification outcomes.
+
+Available categories and markets vary as new events are added to the platform.
 
 #### TurboFlow App
 
-See how users can access and engage with TurboFlow through the platform’s app experience.
+Access TurboFlow’s trading and market experiences through the platform’s mobile app.
 
 #### Future Products
 
-TurboFlow is designed to expand beyond its current formats. This section will introduce future market products as the platform continues to evolve.
+TurboFlow will continue to expand into new market formats and trading experiences as the platform evolves.
 
 ### Why it matters
 
-TurboFlow’s product strategy is built around a simple idea: **market participation should not be one-size-fits-all**.
+TurboFlow’s product strategy is built around a simple idea: market participation should not be one-size-fits-all.
 
-By offering different market formats, TurboFlow aims to make trading more accessible, more engaging, and more adaptable to how retail users actually want to participate.
+Some users want familiar perpetual markets. Others prefer shorter-duration trades or want to participate around events they already follow.
+
+By bringing these experiences together, TurboFlow aims to make market participation simpler, more accessible, and better suited to the different ways people trade.

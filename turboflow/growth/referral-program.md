@@ -7,15 +7,26 @@ icon: people-arrows
 
 # Referral Program
 
-TurboFlow’s Referral Program is designed to let users invite others to join the platform and participate in its growth over time.
+TurboFlow’s Referral Program rewards both inviters and invitees for bringing new participants to the platform.
 
-As TurboFlow continues to expand, the Referral Program is expected to play an important role in connecting user participation with broader platform activity and community growth.
+Share your referral link or code with others. When an eligible referred user joins and trades on TurboFlow, referral rewards are distributed according to the applicable product and reward structure.
 
 ### How It Works
 
-In general, users may be able to share referral links or referral codes with others and receive benefits based on eligible participation under the platform’s applicable rules.
+1. Share your TurboFlow referral link or referral code.
+2. Your invitee signs up using your referral.
+3. When the invitee completes eligible trading activity, both the inviter and invitee may receive referral rewards.
 
-The exact structure, reward mechanism, and qualification requirements may vary over time and will be determined by official platform rules and announcements.
+Referral rewards vary by product.
+
+### Referral Rewards
+
+| Product         | Total Reward                         | Inviter | Invitee |
+| --------------- | ------------------------------------ | ------- | ------- |
+| Perps           | 30% of the invitee’s trading fees    | 15%     | 15%     |
+| Event Contracts | 0.3% of the invitee’s trading volume | 0.2%    | 0.1%    |
+| Spot Prediction | 0.3% of the invitee’s trading volume | 0.2%    | 0.1%    |
+| 1000x Perps     | No referral reward currently         | —       | —       |
 
 ### Why It Matters
 

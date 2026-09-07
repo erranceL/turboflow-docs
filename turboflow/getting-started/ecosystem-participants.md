@@ -13,17 +13,31 @@ This page provides a starting point for partners, professional participants, and
 
 ### Market Makers
 
-TurboFlow welcomes market makers interested in supporting liquidity, execution quality, and broader market participation across the ecosystem.
+TurboFlow works with established market makers to support liquidity, execution quality, and broader market participation across the ecosystem.
 
-Relevant documentation and integration details are being expanded over time. If you are interested in working with TurboFlow as a market maker, please contact us through our official channels.
+**Market-making participation is currently invite-only.**
+
+If your firm is interested in providing liquidity on TurboFlow, please contact: [contacts@tf.xyz](mailto:contact@tf.xyz) with your company website and relevant information about your market-making experience, current venues, track record, and operational capabilities.
 
 Contact detais: [contacts@tf.xyz](mailto:contact@tf.xyz)
 
 ### API Traders
 
-TurboFlow is also building toward broader support for API-based trading participants.
+The TurboFlow Trading API provides programmatic access for professional and high-volume traders looking to integrate TurboFlow into their trading systems and workflows.
 
-Relevant documentation and access information will be opened further over time. If you are interested in connecting as an API trader, please contact us through official channels for the latest status.
+API access is currently in beta and available to approved users only. **Accounts with more than $100,000 in cumulative trading volume are eligible to apply**. Meeting this requirement does not guarantee approval.
+
+To apply, email [contacts@tf.xyz](mailto:contact@tf.xyz) with your TurboFlow UID and account email. Applications are reviewed individually.
+
+Contact detais: [contacts@tf.xyz](mailto:contact@tf.xyz)
+
+### Builders
+
+TurboFlow works with selected builders and businesses looking to integrate parts of TurboFlow’s product offering and liquidity into their own platforms.
+
+Through Builder Code, approved partners can access supported integration capabilities, with commercial terms determined on a case-by-case basis depending on the products and services involved.
+
+If you are interested in building with TurboFlow, please contact [contacts@tf.xyz](mailto:contact@tf.xyz) with your company details, intended integration, and relevant operational capabilities.
 
 Contact detais: [contacts@tf.xyz](mailto:contact@tf.xyz)
 
